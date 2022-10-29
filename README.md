@@ -1,1 +1,2 @@
-# rastgeleolusansayiyidinamikbellekilsyazma
+# rastgeleolusansayiyidinamikbellekileyazma
+c kodlari ile yazilaccak
