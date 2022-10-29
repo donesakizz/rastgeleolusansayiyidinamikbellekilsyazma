@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *outfile,*infile;//outfile ve infile file cinsinden tanimlanmis yapilar
+    int b=5,f;
+    float a=13.72,c=6.68,e,g;
+    outfile =fopen("testdata","w");
+    fprintf(outfile,"%f%d%f",a,b,c);//outfile testdataya baglanmis bir gösterici
+    fclose(outfile);
+    infile=fopen("testdata","r");//ayni dosyayi okuma modunda aciyoruz
+    fscanf(infile,"%f %d %f",&e,&f,&g);//normalde input olarak klavyeden okuyan fscanfi burda dosyaya bagliyoruz ve dosyadan okuyoruz
+    printf("%f %d %f\n",a,b,c);//okunulan bilgiler ekrana basiliyor
+    printf("%f %d %f\n",e,f,g);//okunulan bilgiler ekrana basiliyor
+    return 0;
+}
